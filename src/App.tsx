@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { useId } from "react";
 import { fetchWeather } from "./api/weather";
 import WeatherDisplay from "./components/WeatherDisplay";
 import CityInput from "./components/CityInput";
@@ -14,8 +13,8 @@ const App = () => {
     isError,
     error,
   } = useQuery({
-    queryKey: ["weather", city],
-    queryFn: () => fetchWeather(city),
+    queryKey: ["weather", city.trim().toLowerCase()],
+    queryFn: () => fetchWeather(city.trim().toLowerCase()),
     enabled: Boolean(city),
     retry: false,
   });
