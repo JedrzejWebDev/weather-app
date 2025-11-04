@@ -10,9 +10,11 @@ react-query, vitest
 
 ## ⚙️ Instalacja i uruchomienie:  
 **Przed przystąpieniem do wykonywania komend należy mieć zainstalowane git oraz node.js + npm**  
-```bash git clone https://github.com/JedrzejWebDev/weather-app.git  
+```bash
+git clone https://github.com/JedrzejWebDev/weather-app.git  
 cd weather-app  
-npm install```  
+npm install  
+``` 
 **Utwórz plik .env w głównym katalogu projektu i dodaj klucz API: VITE_API_KEY=twoj_klucz_z_openweathermap  
 W celu zdobycia klucza:  
 Wejdź na https://openweathermap.org/ i zarejestruj konto (Sign up / Sign in)  
