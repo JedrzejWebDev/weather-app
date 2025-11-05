@@ -1,3 +1,5 @@
+https://jedrzejwebdev.github.io/weather-app/
+
 ## 🧩 Struktura projektu:  
 **src/components** - 2 pliki. W jednym pole tekstowe, w którym możemy wpisać miasto. Drugi odpowiedzialny za wyświetlanie parametrów pogodowych wpisanego miasta  
 **src/api/weather.ts** - zawiera funkcję fetchWeather, która łączy się z API OpenWeatherMap przy użyciu metody fetch, pobiera dane pogodowe dla podanego miasta i zwraca je w przetworzonym formacie.  
